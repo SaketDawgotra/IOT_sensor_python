@@ -11,6 +11,7 @@ ser = serial.Serial('/dev/tty.usbserial', 9600)
 
 def createFigure():
     plt.plot(readings,'ro--')
+    plt.title("MQ Hydrogen Gas Sensor Graphical Representation")
     plt.ylabel('Hydrogen gas Readings')
     plt.show()
 
